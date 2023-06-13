@@ -26,7 +26,7 @@ const Navbar = () => {
                   to="/general"
                   onClick={() => {
                     // window.location.href = "/NewsApp3";
-                    window.location.href = "/NewsApp4";
+                    window.location.href = "/NewsApp4/";
                   }}
                 >
                   Home
@@ -38,7 +38,7 @@ const Navbar = () => {
                   className="nav-link"
                   to="/business"
                   onClick={() => {
-                    window.location.href = "/business";
+                    window.location.href = "/business/";
                   }}
                 >
                   Business
@@ -49,7 +49,7 @@ const Navbar = () => {
                   className="nav-link"
                   to="/entertainment"
                   onClick={() => {
-                    window.location.href = "/entertainment";
+                    window.location.href = "/entertainment/";
                   }}
                 >
                   Entertainment
@@ -61,7 +61,7 @@ const Navbar = () => {
                   className="nav-link"
                   to="/health"
                   onClick={() => {
-                    window.location.href = "/health";
+                    window.location.href = "/health/";
                   }}
                 >
                   Health
@@ -72,7 +72,7 @@ const Navbar = () => {
                   className="nav-link"
                   to="/science"
                   onClick={() => {
-                    window.location.href = "/science";
+                    window.location.href = "/science/";
                   }}
                 >
                   Science
@@ -83,7 +83,7 @@ const Navbar = () => {
                   className="nav-link"
                   to="/sports"
                   onClick={() => {
-                    window.location.href = "/sports";
+                    window.location.href = "/sports/";
                   }}
                 >
                   Sports
@@ -95,7 +95,7 @@ const Navbar = () => {
                   className="nav-link"
                   to="/technology"
                   onClick={() => {
-                    window.location.href = "/technology";
+                    window.location.href = "/technology/";
                   }}
                 >
                   Technology

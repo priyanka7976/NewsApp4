@@ -22,7 +22,7 @@ const App = () => {
         <LoadingBar color="#f11946" progress={progress} />
 
         <Switch>
-          <Route exact path="/NewsApp4" key="general">
+          <Route exact path="/NewsApp4/" key="general">
             <News
               setProgress={setProgress}
               country="us"
@@ -30,7 +30,7 @@ const App = () => {
               category="general"
             />
           </Route>
-          <Route exact path="/business" key="business">
+          <Route exact path="/business/" key="business">
             <News
               setProgress={setProgress}
               country="us"
@@ -38,7 +38,7 @@ const App = () => {
               category="business"
             />
           </Route>
-          <Route exact path="/entertainment" key="entertainment">
+          <Route exact path="/entertainment/" key="entertainment">
             <News
               setProgress={setProgress}
               country="us"
@@ -46,7 +46,7 @@ const App = () => {
               category="entertainment"
             />
           </Route>
-          <Route exact path="/health">
+          <Route exact path="/health/">
             <News
               setProgress={setProgress}
               country="us"
@@ -55,7 +55,7 @@ const App = () => {
               key="health"
             />
           </Route>
-          <Route exact path="/science">
+          <Route exact path="/science/">
             <News
               setProgress={setProgress}
               country="us"
@@ -64,7 +64,7 @@ const App = () => {
               key="science"
             />
           </Route>
-          <Route exact path="/sports">
+          <Route exact path="/sports/">
             <News
               setProgress={setProgress}
               country="us"
@@ -73,7 +73,7 @@ const App = () => {
               key="sports"
             />
           </Route>
-          <Route exact path="/technology">
+          <Route exact path="/technology/">
             <News
               setProgress={setProgress}
               country="us"
