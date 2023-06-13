@@ -73,7 +73,7 @@ const News = (props) => {
           // dataLength={articles.length}
           dataLength={articles?.length ?? 0}
           next={fetchMoreData}
-          hasMore={articles.length !== totalResults}
+          hasMore={articles?.length !== totalResults}
           loader={<Loading />}
         >
           <div className="container">
