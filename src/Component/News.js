@@ -9,6 +9,7 @@ const News = (props) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [totalResults, setTotalResult] = useState(0);
+  const [error, setError] = useState(null);
 
   const newsUpdate = async () => {
     props.setProgress(10);
@@ -56,11 +57,18 @@ const News = (props) => {
     }&pageSize=12`;
     setPage(page + 1);
 
-    let data = await fetch(url);
-    let parseData = await data.json();
-    console.log(parseData);
-    setArticles(articles.concat(parseData.articles));
-    setTotalResult(parseData.totalResults);
+    // let data = await fetch(url);
+    // let parseData = await data.json();
+    try {
+      let data = await fetch(url);
+      let parseData = await data.json();
+      console.log(parseData);
+      setArticles(articles.concat(parseData.articles));
+      setTotalResult(parseData.totalResults);
+    } catch (error) {
+      setError(error);
+      console.error("Error fetching the resource:", error);
+    }
   };
 
   // console.log("second");
