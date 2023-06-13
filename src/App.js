@@ -22,7 +22,7 @@ const App = () => {
         <LoadingBar color="#f11946" progress={progress} />
 
         <Switch>
-          <Route exact path="/" key="general">
+          <Route exact path="/NewsApp4" key="general">
             <News
               setProgress={setProgress}
               country="us"

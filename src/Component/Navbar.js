@@ -26,7 +26,7 @@ const Navbar = () => {
                   to="/general"
                   onClick={() => {
                     // window.location.href = "/NewsApp3";
-                    window.location.href = "/";
+                    window.location.href = "/NewsApp4";
                   }}
                 >
                   Home
